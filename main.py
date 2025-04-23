@@ -1,14 +1,16 @@
 import keyboard
 import sounddevice as sd
 import soundfile as sf
+import json
 
-def play_audio(filename):
+def playSound(filename):
     data, samplerate = sf.read("sounds/"+filename)
     sd.play(data, samplerate, device=43)
     sd.wait()
 
+sounds = json.load(open("conf.json"))
 keyboard.add_hotkey(
-    "alt+1", lambda: play_audio("sfx_taunt.mp3")
+    "alt+1", lambda: playSound(sounds["1"])
 )
 
 keyboard.wait()
