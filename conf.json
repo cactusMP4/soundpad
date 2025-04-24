@@ -1,18 +1,1 @@
-{
-    "_comment": "In case you have diffrent Cable Input device name.",
-    "CableInputName": "CABLE Input (VB-Audio Virtual Cable), Windows DirectSound (0 in, 16 out)",
-
-    "sounds":{
-        "_comment": "Change sound file binded to alt+[number]. All sounds must be in sounds folder.",
-        "1": "sfx_taunt.mp3",
-        "2": null,
-        "3": null,
-        "4": null,
-        "5": null,
-        "6": null,
-        "7": null,
-        "8": null,
-        "9": null,
-        "0": null
-    }
-}
+{"deviceIndex": 43, "sounds": {"0": null, "1": "sfx_taunt.mp3", "2": null, "3": null, "4": null, "5": null, "6": null, "7": null, "8": null, "9": null}}
