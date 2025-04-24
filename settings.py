@@ -29,12 +29,10 @@ root = tk.Tk()
 root.resizable = True
 root.title("Combobox Example")
 
-# Create a label
 label = tk.Label(root, text="Selected Item: ")
 label.place(relx=0, rely=0, relwidth=1, relheight=0.2)
 label.config(text="Select Device: ")
 
-# Create a Combobox widget
 values = []
 for device in query_devices():
     values.insert(len(values)+1, "["+str(device["index"])+"] "+device["name"])
@@ -43,10 +41,8 @@ combo_box = ttk.Combobox(root, values=values)
 combo_box.pack(pady=5)
 combo_box.place(relx=0, rely=0.2, relwidth=1)
 
-# Set default value
 combo_box.set("🎃")
 
-# Bind event to selection
 combo_box.bind("<<ComboboxSelected>>", select)
 
 root.mainloop()
